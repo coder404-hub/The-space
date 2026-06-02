@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE SPACE | Premium Anti-Gym</title>
+  <meta name="description" content="THE SPACE is an elite raw-aesthetic gym built for high-performance athletes. No fluff. Just raw iron, premium equipment, and pure community energy.">
+  
+  <!-- Typography Imports: Bebas Neue for tall compressed headings, Syne for wide bold headings, Space Grotesk for Swiss body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Subtle Film Grain Overlay -->
+  <div class="film-grain"></div>
+
+  <!-- Smooth Kinetic Scroll Wrapper -->
+  <div id="scroll-container">
+    
+    <!-- Floating Minimalist Header -->
+    <header class="header">
+      <div class="header-logo" data-scramble="THE SPACE">THE SPACE</div>
+      <nav class="nav">
+        <a href="#hero" class="nav-link" data-scramble="THE SPACE">THE SPACE</a>
+        <a href="#culture" class="nav-link" data-scramble="CULTURE">CULTURE</a>
+        <a href="#schedule" class="nav-link" data-scramble="DISCIPLINES">DISCIPLINES</a>
+        <a href="#hype" class="nav-link" data-scramble="COMMUNITY">COMMUNITY</a>
+      </nav>
+      <a href="#contact" class="btn-nav-action">CLAIM A SPOT</a>
+    </header>
+
+    <main>
+      <!-- Hero Section: Brutalist Asymmetrical Layout (60% cinematic / 40% stark white text) -->
+      <section id="hero" class="hero-section">
+        <!-- 60% Left Side: Cinematic Visual Loop -->
+        <div class="hero-visual">
+          <div class="hero-media-wrapper">
+            <img src="assets/hero_cover.png" alt="Sweaty close-up athletic deadlift" class="hero-img liquid-image">
+            <div class="hero-media-overlay"></div>
+            <!-- Interactive Floating Badge -->
+            <div class="hero-floating-badge">[ RAW IRON / ELEIKO CORE ]</div>
+          </div>
+        </div>
+        
+        <!-- 40% Right Side: Stark White Column with Massive Text -->
+        <div class="hero-content">
+          <div class="hero-content-inner">
+            <div class="hero-tag">[ INITIALIZING SPACE ]</div>
+            <h1 class="hero-headline">
+              RESULTS ARE EARNED,<br>NOT REQUESTED.
+            </h1>
+            <p class="hero-subtext">
+              We stripped away the neon corporate fluff. No cucumber water. No smiling models. Only heavy concrete, professional Eleiko plates, and cold determination.
+            </p>
+            <a href="#schedule" class="btn-primary-brutal">ENTER THE SPACE</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bento Grid Section: "The Culture & The Spec" -->
+      <section id="culture" class="section-bento">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">// 01 // THE SPEC & THE SPACE</span>
+            <h2 class="section-title">THE CULTURE & SPEC</h2>
+          </div>
+          
+          <div class="bento-grid">
+            <!-- Card 1: Large Video/Image Loop (Concrete & Mirror) -->
+            <div class="bento-card card-large">
+              <div class="card-img-wrapper">
+                <img src="assets/space_concrete.png" alt="Minimalist concrete gym mirrors" class="bento-img liquid-image">
+                <div class="card-overlay"></div>
+              </div>
+              <div class="card-content-bottom">
+                <span class="card-tag">Locker Rooms / 01</span>
+                <h3 class="card-heading">CONCRETE & BACKLIT MIRRORS</h3>
+                <p class="card-desc">Designed with architectural minimalism. The ultimate post-workout selfie frame, built for the community.</p>
+              </div>
+            </div>
+
+            <!-- Card 2: Medium Text Card (The Heavy Room) -->
+            <div class="bento-card card-medium-text">
+              <div class="card-inner-text">
+                <span class="card-tag">// INFRASTRUCTURE</span>
+                <h3 class="card-heading text-infrared">THE HEAVY ROOM</h3>
+                <p class="card-desc-long">
+                  Our plates are Eleiko Competition. Our racks are custom-braced raw steel. Hammer Strength plates ready for heavy loading. No plastic machines. If it doesn't build raw power, it's not in the building.
+                </p>
+                <div class="card-list">
+                  <div class="list-item"><span>01 /</span> ELEIKO COMPETITION PLATES</div>
+                  <div class="list-item"><span>02 /</span> HAMMER STRENGTH ISO-LATERALS</div>
+                  <div class="list-item"><span>03 /</span> CHALK STATION STATIONS</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Small Interactive Card (Local Clock & Energy) -->
+            <div class="bento-card card-small-interactive">
+              <div class="card-interactive-inner">
+                <div class="interactive-header">
+                  <span class="card-tag">LIVE TELEMETRY</span>
+                  <div class="pulse-indicator"></div>
+                </div>
+                <div class="live-clock-wrapper">
+                  <span class="live-clock-label">LOCAL SPACE TIME</span>
+                  <div class="live-clock" id="live-clock">18:41:02</div>
+                </div>
+                <div class="energy-status-wrapper">
+                  <span class="energy-label">SPACE ENERGY LEVEL</span>
+                  <div class="energy-value" id="energy-value">PEAK CAPACITY</div>
+                  <div class="energy-percentage" id="energy-percentage">92%</div>
+                </div>
+                <div class="live-ticker-info">
+                  <span>GYM TRAFFIC: HIGH. EXPECT HEAVY LIFTS.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: High-Contrast Gritty Coach Portrait -->
+            <div class="bento-card card-small-image">
+              <div class="card-img-wrapper">
+                <img src="assets/trainer_focused.png" alt="Focused coach portrait" class="bento-img liquid-image">
+                <div class="card-overlay"></div>
+              </div>
+              <div class="card-content-bottom">
+                <span class="card-tag">COACH / INTERACTION</span>
+                <h3 class="card-heading">KAI | HEAD ELITE COACH</h3>
+                <p class="card-desc">Form correction over fake motivation. Kai does not smile for photos. He builds strength.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Schedule Section: Choose Your Discipline (Interactive Accordion) -->
+      <section id="schedule" class="section-schedule">
+        <!-- Changing background layer container -->
+        <div class="schedule-bg-layer" id="schedule-bg-metcon" style="background-image: url('assets/class_metcon.png');"></div>
+        <div class="schedule-bg-layer" id="schedule-bg-run-iron" style="background-image: url('assets/class_run_iron.png');"></div>
+        <div class="schedule-bg-layer" id="schedule-bg-lift" style="background-image: url('assets/class_lift.png');"></div>
+        <div class="schedule-bg-overlay"></div>
+
+        <div class="container relative-z">
+          <div class="section-header">
+            <span class="section-label">// 02 // CHOOSE YOUR DISCIPLINE</span>
+            <h2 class="section-title text-white">THE DISCIPLINE LIST</h2>
+          </div>
+
+          <div class="accordion-list">
+            <!-- Accordion Item 1 -->
+            <div class="accordion-item" data-bg="schedule-bg-metcon">
+              <div class="accordion-header">
+                <div class="item-number">01 /</div>
+                <div class="item-title">METCON</div>
+                <div class="item-arrow">→</div>
+              </div>
+              <div class="accordion-content">
+                <div class="content-grid">
+                  <div class="content-left">
+                    <p class="content-desc">Metabolic Conditioning designed to push VO2 max to the breaking point. A grueling combo of assault bikes, rowing machines, and high-rep functional movements.</p>
+                  </div>
+                  <div class="content-right">
+                    <div class="info-block">
+                      <span class="info-label">FOCUS</span>
+                      <span class="info-value">Endurance & Speed</span>
+                    </div>
+                    <div class="info-block">
+                      <span class="info-label">ENERGY PROFILE</span>
+                      <span class="info-value text-infrared">EXTREME INTENSITY</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 2 -->
+            <div class="accordion-item" data-bg="schedule-bg-run-iron">
+              <div class="accordion-header">
+                <div class="item-number">02 /</div>
+                <div class="item-title">RUN + IRON</div>
+                <div class="item-arrow">→</div>
+              </div>
+              <div class="accordion-content">
+                <div class="content-grid">
+                  <div class="content-left">
+                    <p class="content-desc">The ultimate blend of athletic power and speed. Alternating blocks of high-speed interval running on curved woodway treadmills and heavy iron strength blocks.</p>
+                  </div>
+                  <div class="content-right">
+                    <div class="info-block">
+                      <span class="info-label">FOCUS</span>
+                      <span class="info-value">Athletic Power</span>
+                    </div>
+                    <div class="info-block">
+                      <span class="info-label">ENERGY PROFILE</span>
+                      <span class="info-value text-infrared">HIGH RESILIENCE</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 3 -->
+            <div class="accordion-item" data-bg="schedule-bg-lift">
+              <div class="accordion-header">
+                <div class="item-number">03 /</div>
+                <div class="item-title">LIFT</div>
+                <div class="item-arrow">→</div>
+              </div>
+              <div class="accordion-content">
+                <div class="content-grid">
+                  <div class="content-left">
+                    <p class="content-desc">No running, no cardio equipment. Just you, the barbell, and the floor. Focused powerlifting coaching targeting squat, bench, and deadlift mechanics.</p>
+                  </div>
+                  <div class="content-right">
+                    <div class="info-block">
+                      <span class="info-label">FOCUS</span>
+                      <span class="info-value">Absolute Strength</span>
+                    </div>
+                    <div class="info-block">
+                      <span class="info-label">ENERGY PROFILE</span>
+                      <span class="info-value text-infrared">RAW EFFORT</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hype Wall: Social Proof Ticker Tape Marquee -->
+      <section id="hype" class="section-hype">
+        <div class="container-full">
+          <div class="section-header container">
+            <span class="section-label">// 03 // COMMUNITY FEED</span>
+            <h2 class="section-title">THE HYPE WALL</h2>
+          </div>
+
+          <!-- Auto-scrolling horizontal marquee -->
+          <div class="marquee-wrapper">
+            <div class="marquee-track">
+              <!-- Slide 1 -->
+              <div class="story-card">
+                <img src="assets/hero_cover.png" alt="Instagram user story 1" class="story-img">
+                <div class="story-overlay"></div>
+                <div class="story-header">
+                  <span class="username">@alex_deadlifts</span>
+                  <span class="platform-icon">IG</span>
+                </div>
+                <div class="story-footer">
+                  <span class="story-text">New deadlift PR. The concrete floor makes it different.</span>
+                  <span class="location-tag">📍 THE SPACE, L1</span>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="story-card">
+                <img src="assets/space_concrete.png" alt="Instagram user story 2" class="story-img">
+                <div class="story-overlay"></div>
+                <div class="story-header">
+                  <span class="username">@concrete_aesthetic</span>
+                  <span class="platform-icon">TikTok</span>
+                </div>
+                <div class="story-footer">
+                  <span class="story-text">This locker room is an absolute vibe check.</span>
+                  <span class="location-tag">📍 THE SPACE, CENTRAL</span>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="story-card">
+                <img src="assets/trainer_focused.png" alt="Instagram user story 3" class="story-img">
+                <div class="story-overlay"></div>
+                <div class="story-header">
+                  <span class="username">@val_lifts</span>
+                  <span class="platform-icon">IG</span>
+                </div>
+                <div class="story-footer">
+                  <span class="story-text">Kai is relentless. Focus on form, no excuses.</span>
+                  <span class="location-tag">📍 THE SPACE, LIFT ROOM</span>
+                </div>
+              </div>
+              <!-- Slide 4 -->
+              <div class="story-card">
+                <img src="assets/class_metcon.png" alt="Instagram user story 4" class="story-img">
+                <div class="story-overlay"></div>
+                <div class="story-header">
+                  <span class="username">@metcon_queen</span>
+                  <span class="platform-icon">IG</span>
+                </div>
+                <div class="story-footer">
+                  <span class="story-text">Drenched. METCON absolutely crushed me today.</span>
+                  <span class="location-tag">📍 THE SPACE, PIT</span>
+                </div>
+              </div>
+              <!-- Slide 5 -->
+              <div class="story-card">
+                <img src="assets/class_run_iron.png" alt="Instagram user story 5" class="story-img">
+                <div class="story-overlay"></div>
+                <div class="story-header">
+                  <span class="username">@marathon_to_iron</span>
+                  <span class="platform-icon">IG</span>
+                </div>
+                <div class="story-footer">
+                  <span class="story-text">Treadmill sprints and heavy loading. Unbelievable workout.</span>
+                  <span class="location-tag">📍 THE SPACE, RUN+IRON</span>
+                </div>
+              </div>
+              
+              <!-- Duplicate slides for seamless scrolling looping -->
+              <!-- Slide 1 Dup -->
+              <div class="story-card">
+                <img src="assets/hero_cover.png" alt="Instagram user story 1" class="story-img">
+                <div class="story-overlay"></div>
+                <div class="story-header">
+                  <span class="username">@alex_deadlifts</span>
+                  <span class="platform-icon">IG</span>
+                </div>
+                <div class="story-footer">
+                  <span class="story-text">New deadlift PR. The concrete floor makes it different.</span>
+                  <span class="location-tag">📍 THE SPACE, L1</span>
+                </div>
+              </div>
+              <!-- Slide 2 Dup -->
+              <div class="story-card">
+                <img src="assets/space_concrete.png" alt="Instagram user story 2" class="story-img">
+                <div class="story-overlay"></div>
+                <div class="story-header">
+                  <span class="username">@concrete_aesthetic</span>
+                  <span class="platform-icon">TikTok</span>
+                </div>
+                <div class="story-footer">
+                  <span class="story-text">This locker room is an absolute vibe check.</span>
+                  <span class="location-tag">📍 THE SPACE, CENTRAL</span>
+                </div>
+              </div>
+              <!-- Slide 3 Dup -->
+              <div class="story-card">
+                <img src="assets/trainer_focused.png" alt="Instagram user story 3" class="story-img">
+                <div class="story-overlay"></div>
+                <div class="story-header">
+                  <span class="username">@val_lifts</span>
+                  <span class="platform-icon">IG</span>
+                </div>
+                <div class="story-footer">
+                  <span class="story-text">Kai is relentless. Focus on form, no excuses.</span>
+                  <span class="location-tag">📍 THE SPACE, LIFT ROOM</span>
+                </div>
+              </div>
+              <!-- Slide 4 Dup -->
+              <div class="story-card">
+                <img src="assets/class_metcon.png" alt="Instagram user story 4" class="story-img">
+                <div class="story-overlay"></div>
+                <div class="story-header">
+                  <span class="username">@metcon_queen</span>
+                  <span class="platform-icon">IG</span>
+                </div>
+                <div class="story-footer">
+                  <span class="story-text">Drenched. METCON absolutely crushed me today.</span>
+                  <span class="location-tag">📍 THE SPACE, PIT</span>
+                </div>
+              </div>
+              <!-- Slide 5 Dup -->
+              <div class="story-card">
+                <img src="assets/class_run_iron.png" alt="Instagram user story 5" class="story-img">
+                <div class="story-overlay"></div>
+                <div class="story-header">
+                  <span class="username">@marathon_to_iron</span>
+                  <span class="platform-icon">IG</span>
+                </div>
+                <div class="story-footer">
+                  <span class="story-text">Treadmill sprints and heavy loading. Unbelievable workout.</span>
+                  <span class="location-tag">📍 THE SPACE, RUN+IRON</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hype-marquee-footer container">
+            <span class="hype-footer-text">Seen on court. Driven by community.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact/Membership Action Section: Redesigned as a Premium Split Slide -->
+      <section id="contact" class="section-contact-slide">
+        <!-- Left Side: Stark White Form Column -->
+        <div class="contact-form-col">
+          <div class="contact-form-inner">
+            <span class="contact-tag">// APPLICATION SYSTEM</span>
+            <h2 class="contact-heading">CLAIM A SPOT</h2>
+            <p class="contact-subtext">We monitor floor capacity to prevent overcrowding. Apply now for a membership spot. Only serious athletes need apply.</p>
+            
+            <form class="contact-form-brutal" onsubmit="event.preventDefault(); alert('SPOT APPLICATION SENT. ESTIMATED REVIEW: 2 HOURS.');">
+              <div class="form-group">
+                <label for="user-email" class="form-label">[ EMAIL ADDRESS ]</label>
+                <input type="email" id="user-email" placeholder="ENTER YOUR EMAIL" class="contact-input-brutal" required>
+              </div>
+              <div class="form-group">
+                <label for="user-discipline" class="form-label">[ PREFERRED DISCIPLINE ]</label>
+                <select id="user-discipline" class="contact-select-brutal">
+                  <option value="metcon">METCON</option>
+                  <option value="run-iron">RUN + IRON</option>
+                  <option value="lift">LIFT</option>
+                </select>
+              </div>
+              <button type="submit" class="btn-submit-brutal">SUBMIT APPLICATION</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Right Side: Dark Gritty Visual with Live Cap Feed -->
+        <div class="contact-visual-col">
+          <img src="assets/class_lift.png" alt="Heavy barbell lifting in the dark" class="contact-visual-img liquid-image">
+          <div class="contact-visual-overlay"></div>
+          <div class="contact-visual-content">
+            <span class="visual-tag">[ REAL-TIME CAP ]</span>
+            <div class="visual-stats">
+              <div class="stat-row">
+                <span class="stat-label">MEMBERSHIP CAP</span>
+                <span class="stat-value">500 ACTIVE</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-label">SPOTS REMAINING</span>
+                <span class="stat-value text-infrared">14 LEFT</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-label">PENDING QUEUE</span>
+                <span class="stat-value">47 ATHLETES</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h2 class="footer-logo">THE SPACE</h2>
+            <p class="footer-desc">An uncompromising environment built for human performance. Est. 2026.</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <span class="footer-col-title">LOCATIONS</span>
+              <a href="#">DOWNTOWN L1</a>
+              <a href="#">WEST WAREHOUSE</a>
+            </div>
+            <div class="footer-column">
+              <span class="footer-col-title">HOURS</span>
+              <span>MON - FRI: 05:00 - 23:00</span>
+              <span>SAT - SUN: 06:00 - 21:00</span>
+            </div>
+            <div class="footer-column">
+              <span class="footer-col-title">SYSTEM</span>
+              <a href="#">CAREERS</a>
+              <a href="#">PARTNERS</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2026 THE SPACE. ALL RIGHTS RESERVED. FORGED IN MATTE BLACK.</span>
+          <span>[ STACK: VANILLA HTML/CSS/JS ]</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- SVG Displacement Ripple Filter for Liquid Image Hover Interaction -->
+  <svg class="liquid-filter-svg" style="display: block; width: 0; height: 0; position: absolute; overflow: hidden;">
+    <defs>
+      <filter id="liquid-ripple-filter">
+        <!-- Scale xChannelSelector and yChannelSelector mapping -->
+        <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" result="noise" />
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="G" id="displacement-map" />
+      </filter>
+    </defs>
+  </svg>
+
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

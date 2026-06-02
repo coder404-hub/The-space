@@ -1,0 +1,11 @@
+{
+  "name": "the-space-gym",
+  "version": "1.0.0",
+  "description": "Premium Anti-Gym Website",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'Static site, no build required.'"
+  },
+  "author": "Antigravity",
+  "license": "MIT"
+}
